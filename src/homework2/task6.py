@@ -13,7 +13,7 @@ def main():
         print("Полиндром")
     else:
         print("Не полиндром")
-   
+
 
 if __name__ == "__main__":
     main()
