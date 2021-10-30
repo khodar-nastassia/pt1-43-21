@@ -4,13 +4,13 @@
 # Input: Цена одной вещи 3 рубля 20 копеек, посчитать 3 предмета.
 # Output: Общая цена 9 рублей 60 копеек
 def main():
-    M = int (input( "Введите рубли" ))
-    N = int (input( "Введите копейки" ))
-    S = int (input( "Введите количество товара" ))
+    M = int(input("Введите рубли"))
+    N = int(input("Введите копейки"))
+    S = int(input("Введите количество товара"))
     coins = (100 * M) + N
     rub = (coins * S) // 100
     cop = (coins * S) % 100
-    print(str(rub) + " рублей "+ str(cop) + " копеек" )
+    print(str(rub) + " рублей "+ str(cop) + " копеек")
 
 if __name__ == "__main__":
     main()
