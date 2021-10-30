@@ -10,7 +10,8 @@ def main():
     coins = (100 * M) + N
     rub = (coins * S) // 100
     cop = (coins * S) % 100
-    print(str(rub) + " рублей "+ str(cop) + " копеек")
+    print(str(rub) + " рублей " + str(cop) + " копеек")
+
 
 if __name__ == "__main__":
     main()
