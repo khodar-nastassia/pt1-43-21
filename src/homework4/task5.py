@@ -6,7 +6,7 @@ def main():
     for i in range(len(items)):
         for j in range(len(items)):
             if i != j and items[i] == items[j]:
-             break
+                break
         else:
             print(items[i], end=' ')
 
