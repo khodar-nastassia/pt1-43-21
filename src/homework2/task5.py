@@ -3,7 +3,7 @@
 def main():
     n = input("Номер элемента ряда Фибоначчи: ")
     n = int(n)
-    fib1 = 1
+    fib1 = 0
     fib2 = 1
     i = 0
     while i < n - 2:
