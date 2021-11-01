@@ -1,4 +1,5 @@
-'''You need to write regex that will validate a password to make sure it meets the following criteria:
+'''You need to write regex that will validate a password to make sure it meets the following
+criteria:
 At least six characters long
 contains a lowercase letter
 contains an uppercase letter
@@ -13,7 +14,7 @@ def main():
     passw = input("Введите пароль: ")
     regex = r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])[A-Za-z0-9]{6,}$'
     result = re.match(regex, passw)
-    if result != None:
+    if result:
         print(True)
     else:
         print(False)
