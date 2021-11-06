@@ -26,11 +26,11 @@ French
 
 def main():
     students = [{input('Введите язык : ')
-    for _ in range(int(input('Введите количество языков : ')))}
-    for _ in range(int(input('Введите количество школьников : ')))]
+                for _ in range(int(input('Введите количество языков : ')))}
+                for _ in range(int(input('Введите количество школьников : ')))]
     known_by_everyone, known_by_someone = set.intersection(*students), set.union(*students)
     print("Знает каждый школьник: ", len(known_by_everyone), *sorted(known_by_everyone), sep='\n')
-    print("Знает кто-то из школьников:  ", len(known_by_someone), *sorted(known_by_someone), sep='\n')
+    print("Знает из школьников:  ", len(known_by_someone), *sorted(known_by_someone), sep='\n')
 
 
 if __name__ == "__main__":
