@@ -9,7 +9,7 @@ def main():
     items = [int(s) for s in input("Введите список: ").split()]
     for i in items:
         if items.count(i) == 1:
-            print(i)
+            print("В приведенном списке единожды встречается:", i)
 
 
 if __name__ == "__main__":

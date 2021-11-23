@@ -7,12 +7,12 @@
 
 
 def main():
-    items = [int(s) for s in input("Введите числа: ").split()]
+    items = [int(s) for s in input("Введите числа: ")]
     for number in items:
         if number == 0:
             items.append(number)
             items.remove(number)
-    print(items)
+    print("Ненулевые элементы слева:", items)
 
 
 if __name__ == "__main__":
