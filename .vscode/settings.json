@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./test",
+        "./src/homework7/utils"
+    ]
+}
