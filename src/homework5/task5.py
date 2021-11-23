@@ -25,12 +25,24 @@ French
 
 
 def main():
-    students = [{input('Введите язык : ')
-                for _ in range(int(input('Введите количество языков : ')))}
-                for _ in range(int(input('Введите количество школьников : ')))]
-    known_by_everyone, known_by_someone = set.intersection(*students), set.union(*students)
-    print("Знает каждый школьник: ", len(known_by_everyone), *sorted(known_by_everyone), sep='\n')
-    print("Знает из школьников:  ", len(known_by_someone), *sorted(known_by_someone), sep='\n')
+    count_of_students = int(input('Введите количество школьников : '))
+    students_languages = []
+    count1 = 0
+    for i in range(count_of_students):
+        count_of_languages = int(input('Введите количество языков i-ого школьника: '))
+        languages = []
+        student_languages = (languages)
+        students_languages.append(student_languages)
+        count1 += 1
+        count2 = 0
+        for k in range(count_of_languages):
+            language = (input('Введите язык : '))
+            languages.append(language)
+            count2 += 1
+    everyone = set(students_languages[0]) & set(students_languages[1]) & set(students_languages[2])
+    someone = set(students_languages[0]) | set(students_languages[1]) | set(students_languages[2])
+    print("Знает каждый школьник: " + str(len(everyone)), *sorted(everyone), sep='\n')
+    print("Знает один из школьников: " + str(len(someone)), *sorted(someone), sep='\n')
 
 
 if __name__ == "__main__":

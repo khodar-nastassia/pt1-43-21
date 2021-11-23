@@ -5,9 +5,9 @@
 
 
 def main():
-    firstList = input('Введите цифры').split()
-    secondList = input('Введите цифры').split()
-    print(len(set(firstList) | set(secondList)))
+    first_list = input('Введите цифры, разделенные пробелом ').split()
+    second_list = input('Введите цифры, разделенные пробелом ').split()
+    print("Количество различных чисел двух списков:", len(set(first_list) | set(second_list)))
 
 
 if __name__ == "__main__":

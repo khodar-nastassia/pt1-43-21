@@ -6,8 +6,8 @@ Dict comprehensions
 
 
 def main():
-    dct = {int(element1 + 1): (element1 + 1) ** 3 for element1 in range(20)}
-    print(dct)
+    dct = {int(element1): (element1) ** 3 for element1 in range(1, 21)}
+    print("Словарь, где ключи - число от 1 до 20, а значения - кубы этих чисел ", dct)
 
 
 if __name__ == "__main__":

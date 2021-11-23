@@ -25,20 +25,19 @@ Russia
 
 
 def main():
-    cityCountryMap = {}
-    listOfCities = []
-    for _ in range(int(input('Ведите число: '))):
+    city_country_map = {}
+    list_of_cities = []
+    for _ in range(int(input('Ведите количество стран: '))):
         country, *cities = input('Введите страну и ее города: ').split()
         for city in cities:
-            cityCountryMap[city] = country
+            city_country_map[city] = country
 
-    for _ in range(int(input('Ведите число: '))):
+    for _ in range(int(input('Ведите количество городов для проверки: '))):
         city = str(input('Введите город: '))
-        listOfCities.append(city)
-        print()
+        list_of_cities.append(city)
 
-    for city in listOfCities:
-        print(cityCountryMap[city])
+    for city in list_of_cities:
+        print("Город", city, "находитя в стране", city_country_map[city])
 
 
 if __name__ == "__main__":
