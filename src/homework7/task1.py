@@ -7,116 +7,88 @@ runner(‘func’, ‘func1’...) - вызывает все переданны�
 '''
 
 
-import sys
-sys.path.append('src/homework7/utils/')
-
-import task2_1
-import task2_2
-import task2_3
-import task2_4
-import task2_5
-import task2_6
-import task2_7
-import task2_81
-import task2_82
-import task2_83
-import task2_84
-import task2_85
-import task4_1
-import task4_2
-import task4_3
-import task4_4
-import task4_5
-import task4_6
-import task5_1
-import task5_2
-import task5_3
-import task5_4
-import task5_5
-import task5_6
-import task5_7
+import tasks
 
 
 def all_task():
-    task2_1.count_total_price()
-    task2_2.find_longest_word()
-    task2_3.remove_extra_symbols()
-    task2_4.count_upper_lowercase()
-    task2_5.fibo()
-    task2_6.number_polindrom()
-    task2_7.area_of_triangle()
-    task2_81.split_and_join()
-    task2_82.swap_cases()
-    task2_83.square_number()
-    task2_84.pairs_of_letter()
-    task2_85.regex_password()
-    task4_1.fizz_buzz()
-    task4_2.list_practice()
-    task4_3.tuple_practice()
-    task4_4.pairs_of_elements()
-    task4_5.unic_elements()
-    task4_6.zero_left()
-    task5_1.dict_comprehensions()
-    task5_2.city_country()
-    task5_3.union_of_sets()
-    task5_4.difference_of_sets()
-    task5_5.know_languages()
-    task5_6.count_of_word()
-    task5_7.find_greatest_common_factor()
+    tasks.count_total_price()
+    tasks.find_longest_word()
+    tasks.remove_extra_symbols()
+    tasks.count_upper_lowercase()
+    tasks.fibo()
+    tasks.number_polindrom()
+    tasks.area_of_triangle()
+    tasks.split_and_join()
+    tasks.swap_cases()
+    tasks.square_number()
+    tasks.pairs_of_letter()
+    tasks.regex_password()
+    tasks.fizz_buzz()
+    tasks.list_practice()
+    tasks.tuple_practice()
+    tasks.pairs_of_elements()
+    tasks.unic_elements()
+    tasks.zero_left()
+    tasks.dict_comprehensions()
+    tasks.city_country()
+    tasks.union_of_sets()
+    tasks.difference_of_sets()
+    tasks.know_languages()
+    tasks.count_of_word()
+    tasks.find_greatest_common_factor()
 
 
 def chosen_task(func_name):
-    match func_name:
-        case "task2_1":
-            task2_1.count_total_price()
-        case "task2_2":
-            task2_2.find_longest_word()
-        case "task2_3":
-            task2_3.remove_extra_symbols()
-        case "task2_4":
-            task2_4.count_upper_lowercase()
-        case "task2_5":
-            task2_5.fibo()
-        case "task2_6":
-            task2_6.number_polindrom()
-        case "task2_7":
-            task2_7.area_of_triangle()
-        case "task2_81":
-            task2_81.split_and_join()
-        case "task2_82":
-            task2_82.swap_cases()
-        case "task2_83":
-            task2_83.square_number()
-        case "task2_84":
-            task2_84.pairs_of_letter()
-        case "task2_85":
-            task2_85.regex_password()
-        case "task4_1":
-            task4_1.fizz_buzz()
-        case "task4_2":
-            task4_2.list_practice()
-        case "task4_3":
-            task4_3.tuple_practice()
-        case "task4_4":
-            task4_4.pairs_of_elements()
-        case "task4_5":
-            task4_5.unic_elements()
-        case "task4_6":
-            task4_6.zero_left()
-        case "task5_1":
-            task5_1.dict_comprehensions()
-        case"task5_2":
-            task5_2.city_country()
-        case"task5_3":
-            task5_3.union_of_sets()
-        case"task5_4":
-            task5_4.difference_of_sets()
-        case"task5_5":
-            task5_5.know_languages()
-        case"task5_6":
-            task5_6.count_of_word()
-        case"task5_7":
-            task5_7.find_greatest_common_factor()
+    if func_name == "task2_1":
+        tasks.count_total_price()
+    if func_name == "task2_2":
+        tasks.find_longest_word()
+    if func_name == "task2_3":
+        tasks.remove_extra_symbols()
+    if func_name == "task2_4":
+        tasks.count_upper_lowercase()
+    if func_name == "task2_5":
+        tasks.fibo()
+    if func_name == "task2_6":
+        tasks.number_polindrom()
+    if func_name == "task2_7":
+        tasks.area_of_triangle()
+    if func_name == "task2_81":
+        tasks.split_and_join()
+    if func_name == "task2_82":
+        tasks.swap_cases()
+    if func_name == "task2_83":
+        tasks.square_number()
+    if func_name == "task2_84":
+        tasks.pairs_of_letter()
+    if func_name == "task2_85":
+        tasks.regex_password()
+    if func_name == "task4_1":
+        tasks.fizz_buzz()
+    if func_name == "task4_2":
+        tasks.list_practice()
+    if func_name == "task4_3":
+        tasks.tuple_practice()
+    if func_name == "task4_4":
+        tasks.pairs_of_elements()
+    if func_name == "task4_5":
+        tasks.unic_elements()
+    if func_name == "task4_6":
+        tasks.zero_left()
+    if func_name == "task5_1":
+        tasks.dict_comprehensions()
+    if func_name == "task5_2":
+        tasks.city_country()
+    if func_name == "task5_3":
+        tasks.union_of_sets()
+    if func_name == "task5_4":
+        tasks.difference_of_sets()
+    if func_name == "task5_5":
+        tasks.know_languages()
+    if func_name == "task5_6":
+        tasks.count_of_word()
+    if func_name == "task5_7":
+        tasks.find_greatest_common_factor()
 
 
 def list_tasks(functions):
@@ -134,7 +106,7 @@ def runner(*args):
 
 
 def main():
-    runner(task2_1.count_total_price, task4_1.fizz_buzz, task5_7.find_greatest_common_factor)
+    runner(tasks.count_total_price, tasks.fizz_buzz, tasks.find_greatest_common_factor)
 
 
 if __name__ == "__main__":
