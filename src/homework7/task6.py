@@ -5,6 +5,7 @@
 
 
 def power(number):
+    '''Функция находит ближайшую степень двойки к введенному числу'''
     power_of_two = int(number ** 0.5)  # определили степень двойки веденного числа
     if abs(2 ** power_of_two - number) < abs(2 ** (power_of_two + 1) - number):  # ближайшая степень
         print("Ближайшая степень двойки", power_of_two)

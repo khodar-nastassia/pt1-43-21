@@ -19,21 +19,29 @@ func(1, 4)   -->  1111010
 
 
 def dec_to_bin(num):
+    '''Функция переводит числа из десятичной системы счисления в двоичную'''
     base = 2
-    newNum = ''
+    new_num = ''
     while num > 0:
-        newNum = str(num % base) + newNum
+        new_num = str(num % base) + new_num
         num //= base
-    return int(newNum)
+    return int(new_num)
 
 
 def do_binary_pyramid(numbers):
+    '''Функция выполняет следующие действия:
+
+    Перевести числа от m до n (включительно) в двоичные числа.
+    Сложить полученные двоичные числа по основанию 10.
+    Перевести результат сложения в двоичную число.
+
+    '''
     if 0 <= int(numbers[0]) <= int(numbers[1]):
         total = 0
         for item in range(int(numbers[0]), int(numbers[1]) + 1):
             total += dec_to_bin(item)
-        strBin = str(dec_to_bin(total))
-        print(strBin)
+        str_bin = str(dec_to_bin(total))
+        print(str_bin)
     else:
         print("Введите корректные данные")
 

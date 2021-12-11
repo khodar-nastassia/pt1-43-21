@@ -4,6 +4,7 @@
 
 
 def calculate_power():
+    '''Функция находит максимальный делитель числа, являющийся степенью двойки'''
     number = int(input('Введите число '))
     power_of_two = 0
     while(True):
