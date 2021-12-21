@@ -36,17 +36,17 @@ Hence in this entire computation we can avoid explicitly simplifying any fractio
 
 
 def ordered_fractions(limit):
-	maxnumer = 0
-	maxdenom = 1
-	for d in range(1, limit + 1):
-		n = d * 3 // 7
-		if d % 7 == 0:
-			n -= 1
-		if n * maxdenom > d * maxnumer: # n/d > maxdenom/maxnumer
-			maxnumer = n
-			maxdenom = d
-	return str(maxnumer)
+    maxnumer = 0
+    maxdenom = 1
+    for d in range(1, limit + 1):
+        n = d * 3 // 7
+        if d % 7 == 0:
+            n -= 1
+        if n * maxdenom > d * maxnumer:
+            maxnumer = n
+            maxdenom = d
+    return str(maxnumer)
 
 
 if __name__ == "__main__":
-	print(ordered_fractions(1000000))
+    print(ordered_fractions(1000000))
