@@ -37,7 +37,7 @@ def decorator(n):
     return my_decorator
 
 
-@decorator(n=int(input()))
+@decorator(12)
 def randomizer():
     '''Generate random number'''
     return random.randrange(0, 10)
